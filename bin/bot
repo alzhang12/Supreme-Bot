@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -Eeuo pipefail
+set -x
+
+# activate virtual environment
+source env/bin/activate
+
+# run bot.py
+python3 bot.py
+
+# deactivate at the end
+deactivate

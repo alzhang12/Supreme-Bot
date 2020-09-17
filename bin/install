@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# setup stuff
+set -Eeuo pipefail
+set -x
+
+# start virtual environment
+source env/bin/activate
+
+# install dependencies
+pip install requests
+pip install click
+pip install urllib
+pip install captcha-harvester
+
+# deactivate virtual environment
+deactivate

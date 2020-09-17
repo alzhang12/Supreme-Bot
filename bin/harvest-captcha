@@ -1,0 +1,8 @@
+#!/bin/bash
+  
+# setup stuff
+set -Eeuo pipefail
+set -x
+
+# harvest 
+harvester recaptcha-v2 -k 6LeWwRkUAAAAAOBsau7KpuC9AV-6J8mhw4AjC3Xz -d supremenewyork.com -b chrome 
